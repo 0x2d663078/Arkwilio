@@ -15,7 +15,7 @@ These scripts has almost no dependencies,  so it's very self-containe and can be
 
 This toolkit can be useful in the following situations :
 
-* The device do not support remote access, or the network department may be very protective and do not provide valide credentials to perform authenticated remote scanning.
+* The device do not support remote access, or the network department may not provide valide credentials to perform authenticated remote scanning.
 * The device is located on a a part of the network that block classic remote scanners (for example : due to a NIDS) or remote code execution.
 
 This toolkit is dedicated to :
