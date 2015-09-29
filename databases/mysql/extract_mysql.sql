@@ -1,0 +1,47 @@
+\T /tmp/audit/mysql-db-output.txt
+select '1.' as '';
+show variables;
+select '2.' as '';
+select * from mysql.user;
+select '3.' as '';
+select * from mysql.host;
+select '3.' as '';
+select * from mysql.tables_priv;
+select '4.' as '';
+select * from mysql.collumns_priv;
+select '5.' as '';
+select * from mysql.procs_priv
+select '6.' as '';
+show databases;
+select '7.' as '';
+select user from mysql.user where user = 'root';
+select '8.' as '';
+select User, Password from mysql.user where length(password) < 41;
+select '9.' as '';
+select user from mysql.user where host = '%';
+select '10.' as '';
+select user, password from mysql.user where length(password) = 0 or password is null;
+select '11.' as '';
+select user from mysql.user where user = '';
+select '13.' as '';
+select user, host from mysql.user where (Select_priv = 'Y') or (Insert_priv = 'Y') or (Update_priv = 'Y') or (Delete_priv = 'Y') or (Create_priv = 'Y') or (Drop_priv = 'Y');”
+select '14.' as '';
+select user, host from mysql.db where db = 'mysql' and ( (Select_priv = 'Y') or (Insert_priv = 'Y') or (Update_priv = 'Y') or (Delete_priv = 'Y') or (Create_priv = 'Y') or (Drop_priv = 'Y'));
+select '15.' as '';
+select user, host from mysql.user where File_priv = 'Y';
+select '16.' as '';
+select user, host from mysql.user where Process_priv = 'Y';
+select '17.' as '';
+select user, host from mysql.user where Super_priv = 'Y';
+select '18.' as '';
+select user, host from mysql.user where Shutdown_priv = 'Y';
+select '19.' as '';
+select user, host from mysql.user where Create_user_priv = 'Y';
+select '20.' as '';
+select user, host from mysql.user where Reload_user_priv = 'Y';
+select '21.' as '';
+select user, host from mysql.user where Create_user_priv = 'Y';
+select '22.' as '';
+select @@global.sql_mode;
+select '23.' as '';
+select @@session.sql_mode;
