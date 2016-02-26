@@ -9,7 +9,7 @@ REM TESTED ON :
 REM  Windows Server 2008
 REM
 REM REFERENCES :
-REM   CIS Apache/HTTPD server Benchmark security
+REM   CIS IIS server Benchmark security
 REM
 REM
 
